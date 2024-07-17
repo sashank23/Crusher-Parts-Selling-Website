@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e72052e40d.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header {
+    text-align: left;
+    background: white;
+    }
+.header .img-logo{
+    width: 140px;
+    height: 110px;
+}
+/* Style the top navigation bar */
+.topnav {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 18px;
+    overflow: hidden;
+    background-color: #333;
+}
+  /* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+  /* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/*---contact--*/
+    .contact{
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(crusher\ matchin.jpg);
+        background-size: cover;
+    }
+    .contact .content{
+        max-width: 800px;
+        text-align: center;
+
+    }
+    .contact .content h2{
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .contact .content p{
+        font-weight: 300;
+        color: #fff;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .container .contactInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contactInfo .box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+    .container .contactInfo .box .icon{
+        min-width: 60px;
+        height:60px ;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+    .container .contactInfo .box .text {
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+    .container .contactInfo .box .text h2{
+        font-weight: 500;
+        color: #fafafa;
+    }
+    .contactform{
+        width: 40%;
+        padding: 40px;
+        background: #fff;
+    }
+    .contactform h2{
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+    .contactform .inputbox {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .contactform .inputbox input,
+    .contactform .inputbox textarea
+    {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+    .contactform .inputbox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+    .contactform .inputbox input:focus ~ span,
+    .contactform .inputbox input:valid ~ span,
+    .contactform .inputbox textarea:focus ~ span,
+    .contactform .inputbox textarea:valid ~ span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+    .contactform .inputbox input[type="submit"]{
+        width: 100px;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 10px;
+    }
+    @media (max-width: 991px){
+        .contact{
+            padding: 50px;
+        }
+        .container{
+            flex-direction: column;
+        }
+        .container .contactInfo{
+            margin-bottom: 40px;
+        }
+        .container .contactInfo,
+        .contactform{
+            width: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="header">
+        <IMG src="SVM Company Logo.png" class="img-logo">
+    </div>
+    <div class="topnav">
+        <a href="svm.html" target="_self"><i class="fa-solid fa-house-chimney"></i>  HOME</a>
+        <a href="#about"><i class="fa-solid fa-address-card"></i>  ABOUT US</a>
+        <a  href="our products.html" target="_self"><i class="fa-solid fa-cart-shopping"></i>  OUR PRODUCTS</a>
+        <a href="svm contact.html" target="_self" style="float:right"><i class="fa-solid fa-envelope"></i>  CONTACT US</a>
+    </div>
+    <section class="contact">
+        <div class="content">
+            <h2>SEND US A MESSAGE</h2>
+            <p> </p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-sharp fa-solid fa-location-dot"></i></i></div>
+                    <div class="text">
+                        <h2>Address</h2>
+                        <p> Gali NO.3  Raghuveer colony, <br> Ballabgarh , Faridabad,<br>,121004, Haryana</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-sharp fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h2>Phone</h2>
+                        <p>+91-8377066590</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-sharp fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h2>Email</h2>
+                        <p>nitin4uagrawal@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactform">
+                <form>
+                    <h2> Send Message</h2>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="" required="required">
+                        <span>Company Name</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" name="" required="required">
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="email" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputbox">
+                        <textarea required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    
+                    <div class="inputbox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
